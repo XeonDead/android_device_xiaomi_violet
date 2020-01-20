@@ -20,6 +20,12 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 #TARGET_INCLUDE_STOCK_ARCORE := true
 #$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Inherit some common CARBON stuff.
+$(call inherit-product, vendor/carbon/config/common.mk)
+
+# Inherit Carbon GSM telephony parts
+$(call inherit-product, vendor/carbon/config/gsm.mk)
+
 ## included from PE common_full_phone
 # Telephony
 
